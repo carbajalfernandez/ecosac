@@ -1,1 +1,29 @@
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+@import url('https://junglecss.github.io/JungleCSS/es/css/jungle.css');
+* {
+	box-sizing:border-box;
+}
+/* SlidesJS Estilos */
+.slidesjs-play,
+.slidesjs-stop,
+.slidesjs-pagination li a {
+	visibility:invisible !important;
+	display:none !important;
+}
+.slidesjs-previous,
+.slidesjs-next {
+	background:#388E3C;
+	border-radius:20%;
+	text-decoration:none;
+	padding:.5em 1em;
+	color:#FFFFFF;
+	float:left !important;
+	margin-right:.5em;
+	margin-top:.5em;
+}
+#slides {
+	padding:1em;
+}
+#slides img {
+	width:100%;
+}
