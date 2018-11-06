@@ -7,7 +7,7 @@ title: Inicio
 <div class="container">
 	<div class="row">
 		<div class="col s12 m12 l12">
-			<h5>Últimas Publicaciones</h5>
+			<h5>Últimos artículos publicados</h5>
 		</div>
 		{% for post in site.categories.articulos %}
 		<div class="col s12 m4 l4">
@@ -20,7 +20,7 @@ title: Inicio
 					<p>{{ post.descripcion }}</p>
 				</div>
 				<div class="card-action">
-					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}{{ post.url }}">Leer más</a>
+					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}/proyectos/{{ post.url }}">Leer más</a>
 				</div>
 			</div>
 		</div>
@@ -30,7 +30,7 @@ title: Inicio
 <div class="container">
 	<div class="row">
 		<div class="col s12 m12 l12">
-			<h5>Últimas Proyectos</h5>
+			<h5>Últimos proyectos realizados</h5>
 		</div>
 		{% for post in site.categories.proyectos %}
 		<div class="col s12 m4 l4">
@@ -43,7 +43,7 @@ title: Inicio
 					<p>{{ post.descripcion }}</p>
 				</div>
 				<div class="card-action">
-					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}{{ post.url }}">Leer más</a>
+					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}/proyectos/{{ post.url }}">Leer más</a>
 				</div>
 			</div>
 		</div>
