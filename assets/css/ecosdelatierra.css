@@ -27,3 +27,21 @@
 #slides img {
 	width:100%;
 }
+/* CSS */
+@media only screen and (min-width:993px) {
+	.logo-desktop {
+		display:block !important;
+	}
+	.logo-movil {
+		display:none !important;
+	}
+}
+@media only screen and (max-width:992px) {
+	.logo-desktop {
+		display:none !important;
+	}
+	.logo-movil {
+		display:block !important;
+	}
+}
+	
