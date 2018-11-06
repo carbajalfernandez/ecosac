@@ -1,20 +1,47 @@
 <div class="container">
 	<div class="row">
-		<div class="col s12 m12 l12">
-			<h5>Últimas Publicaciones</h5>
-		</div>
-		{% for post in publicaciones %}
 		<div class="col s12 m4 l4">
-			<div class="card">
-				<div class="card-image">
-					<img src="{{ post.banner }}">
-					<a class="card-title">{{ post.title }}</a>
-				</div>
-				<div class="card-content">
-					<p>{{ post.descripcion }}</p>
-				</div>
-				<div class="card-action">
-					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}{{ post.url }}">Leer más</a>
+			<div class="card" style="padding:1em;">
+				<h5 class="center">Horario laboral</h5>
+				<table>
+					<tr>
+						<td class="left">Lunes</td>
+						<td class="right">9:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td class="left">Martes</td>
+						<td class="right">9:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td class="left">Miércoles</td>
+						<td class="right">9:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td class="left">Jueves</td>
+						<td class="right">9:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td class="left">Viernes</td>
+						<td class="right">9:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td class="left">Sábado</td>
+						<td class="right">Cerrado</td>
+					</tr>
+					<tr>
+						<td class="left">Domingo</td>
+						<td class="right">Cerrado</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		{% for post in site.categories.documentos %}
+		<div class="col s12 m4 l4">
+			<div class="card" style="padding:1em;">
+				<h5 class="center">Documentos</h5>
+				<div class="collection">
+					<a href="{{ site.baseurl }}{{ post.url }}" class="collection-item waves-effect verde-texto oscuro-3"><i class="new bradge fa fa-download left"></i>{{ post.title }}</a>
+					<a class="btn-large waves-effect waves-light verde oscuro-1 blanco-texto" style="width:100%;">Más documentos</a>
 				</div>
 			</div>
 		</div>
