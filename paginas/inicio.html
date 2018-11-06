@@ -27,3 +27,26 @@ title: Inicio
 		{% endfor %}
 	</div>
 </div>
+<div class="container">
+	<div class="row">
+		<div class="col s12 m12 l12">
+			<h5>Últimas Proyectos</h5>
+		</div>
+		{% for post in site.categories.proyectos %}
+		<div class="col s12 m4 l4">
+			<div class="card">
+				<div class="card-image">
+					<img src="{{ post.banner }}">
+					<a class="card-title">{{ post.title }}</a>
+				</div>
+				<div class="card-content">
+					<p>{{ post.descripcion }}</p>
+				</div>
+				<div class="card-action">
+					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}{{ post.url }}">Leer más</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
