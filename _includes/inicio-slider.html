@@ -1,3 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="col s12 m12 l12">
+			<script>
+			// Slider
+			$(function(){
+			$("#slides").slidesjs({
+				width: 1000,
+				height: 333,
+				play: {
+						active: true,
+						auto: true,
+						interval: 6000,
+						swap: true,
+  	   		   }
+				});
+			});
+			</script>
 			<div class="card">
 				<div id="slides">
 					<img src="{{ site.baseurl }}/assets/imagenes/slider/1.jpg">
