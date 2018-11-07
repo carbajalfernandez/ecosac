@@ -1,0 +1,26 @@
+---
+layout: pagina
+permalink: proyectos
+title: Blog
+descripcion: Galería de proyectos realizados por la organización EcosdelaTierraAC.org
+---
+
+<div class="container">
+	<div class="row">
+		<div class="col s12 m12 l12">
+			<h5>Últimos proyectos realizados</h5>
+		</div>
+		{% for post in site.categories.proyectos %}
+		<div class="col s12 m4 l4">
+			<div class="card">
+				<div class="card-image">
+					<img src="{{ site.baseurl }}/assets/imagenes/proyecto/{{ post.carpeta }}/image.jpg">
+				</div>
+				<div class="card-action">
+					<a class="btn verde blanco-texto waves-effect waves-light" style="width:100%;" href="{{ site.baseurl }}{{ post.url }}">Leer más</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
