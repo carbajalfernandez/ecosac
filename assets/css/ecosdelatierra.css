@@ -29,19 +29,33 @@
 }
 /* CSS */
 @media only screen and (min-width:993px) {
-	.logo-desktop {
+	.display-desktop {
 		display:block !important;
 	}
-	.logo-movil {
+	.display-tablet {
+		display:none !important;
+	}
+	.display-movil {
 		display:none !important;
 	}
 }
 @media only screen and (max-width:992px) {
-	.logo-desktop {
+	.display-desktop {
 		display:none !important;
 	}
-	.logo-movil {
+	.display-tablet {
 		display:block !important;
+	.display-movil {
+		display:none !important;
 	}
 }
-	
+@media only screen and (max-width:600px) {
+	.display-desktop {
+		display:none !important;
+	}
+	.display-tablet {
+		display:none !important;
+	}
+	.display-movil {
+		display:block !important;
+	}
